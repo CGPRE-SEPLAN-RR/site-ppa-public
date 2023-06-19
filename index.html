@@ -1,39 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plano Plurianual SEPLAN/RR</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./images/Plano Plurianual.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/5c7597c188.js" crossorigin="anonymous"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="https://kit.fontawesome.com/5c7597c188.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
+        defer></script>
     <script src="./script.js" defer></script>
+    <script src="./api.js" defer></script>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header id="home">
         <div class="container">
-            <div class="header-imgs d-flex align-items-center justify-content-center py-3">
-                <img src="./images/Plano Plurianual.png" alt="Plano Plurianual">
+            <div class="header d-flex align-items-center justify-content-center py-3">
+                <img class="my-3" src="./images/LOGO PPA.png" alt="Plano Plurianual">
+                <h1>Plano Plurianual 2024-2027</h1>
                 <img class="brasao-rr" src="./images/brasao-logo_gov.png" alt="Governo do Estado de Roraima">
             </div>
+
             <nav class="container-fluid">
                 <ul class="container d-flex justify-content-around py-3 px-3">
                     <li><a href="#home">PPA</a></li>
                     <li><a href="#form-ppa">PARTICIPE</a></li>
                     <li><a href="#sobre-ppa">SOBRE</a></li>
-                    <li><a href="#cidades-ppa">AGENDA</a></li>
+                    <li><a href="#cidades-ppa">RORAIMA 2030</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,21 +50,145 @@
     <main>
         <article class="container-fluid my-5">
             <p class="intro container">
-                Na plataforma do Plano Plurianual (PPA), convidamos <b>você</b>, cidadão, a compartilhar os principais
-                desafios que identificou em sua região ou cidade. Além disso, encorajamos você a sugerir soluções,
+                Na plataforma do Plano Plurianual (PPA), convidamos <strong>você</strong>, cidadão, a compartilhar os
+                principais
+                desafios que identificou em seu município. Além disso, encorajamos você a sugerir soluções,
                 contribuindo ativamente para a construção de um futuro melhor para Roraima.
             </p>
         </article>
 
         <article class="container-fluid mb-5">
-            <section id="sobre-ppa">
+            <section>
                 <h2 class="o-que-e px-3 py-3 container d-flex align-items-center justify-content-center">
                     O que é PPA?
                 </h2>
+
+                <div class="intro container my-5">
+                    <p>
+                        O <strong>Plano Plurianual (PPA)</strong>, previsto na Constituição Federal, nas Constituições
+                        Estaduais e nas Leis Orgânicas dos Municípios, é o instrumento legal de planejamento estratégico
+                        de
+                        Governo é deve ser elaborado para um período de 04 (quatro) anos no qual são estabelecidos as
+                        prioridades e o direcionamento das ações do governo. O PPA é estabelecido por lei e se inicia no
+                        segundo ano de mandato de um governador e se
+                        prolonga
+                        até o final do primeiro ano do mandato de seu sucessor, ele<em>estabelece para a administração
+                            pública em geral, de forma regionalizada, as diretrizes, objetivos e metas que orientarão a
+                            aplicação dos
+                            recursos que podem ser públicos ou privados</em>. O PPA orienta a Gestão Governamental,
+                        sendo
+                        executado através dos Orçamentos Anuais.
+                        Considerando sua relevância como instrumento de planejamento da ação de governo, o PPA
+                        necessita
+                        ser
+                        formulado, executado, monitorado e avaliado segundo rígidos critérios que lhe garantam:
+                    </p>
+
+                    <div class="row">
+                        <ul class="col-6 topicos-o-que-e-1">
+                            <li class="eixos py-3 px-3">
+                                <b>Credibilidade</b> junto à estrutura administrativa do ente público, ao legislativo e
+                                à
+                                população,
+                                conferindo-lhe status de compromisso entre o governo e a sociedade;
+                            </li>
+                            <li class="eixos py-3 px-3 my-3">
+                                <b>Universalidade</b>, demonstrando sua capacidade de adequar-se às peculiaridades das
+                                várias
+                                estruturas
+                                administrativas e diversidades sociais e regionais; e
+                            </li>
+                            <li class="eixos py-3 px-3">
+                                <b>Vitalidade</b>, na medida em que diretrizes, objetivos e metas previstos no Plano
+                                mantenham-se:
+                                <br>
+                                I) alinhados às prioridades do Governo;
+                                <br>
+                                II) adequados à disponibilidade de recursos; e
+                                <br>
+                                III) coerentes com a realidade (influência dos ambientes interno e externo)
+                                experimentada pelo ente público.
+                            </li>
+                        </ul>
+
+                        <div class="o-que-e-img col-6"></div>
+                    </div>
+                </div>
             </section>
 
-            <div class="container mt-5">
-                <div class="eixo-text-parent row container">
+            <section>
+                <h2 class="o-que-e o-que-e-2 px-3 py-3 container d-flex align-items-center justify-content-center">
+                    O que é Roraima 2030?
+                </h2>
+
+                <div class="intro container mt-5">
+                    <p>
+                        O <strong>RORAIMA 2030</strong> é o Plano de Desenvolvimento Sustentável do Estado. É o primeiro
+                        plano de longo
+                        prazo de Roraima e tem como propósito estabelecer políticas públicas empreendedoras, inovadoras
+                        e efetivas para o desenvolvimento sustentável de Roraima.
+                    </p>
+
+                    <div class="row">
+                        <ul class="w-100 topicos-o-que-e">
+                            <li class="eixos py-3 px-3">
+                                <b>Visão:</b> transformar Roraima em um excelente Estado para se viver, trabalhar e
+                                empreender.
+                            </li>
+                            <li class="eixos py-3 px-3 my-3">
+                                <b>Diretrizes:</b>
+                                <br>
+                                I - Fortalecer as condições econômicas e sociais do Estado de Roraima, com foco no
+                                desenvolvimento sustentável e no bem-estar de sua população;
+                                <br>
+                                II - Consolidar o Estado de Roraima como referência em gestão equilibrada, responsável,
+                                eficiente e transparente, mediante o aprimoramento de seus processos e de seus
+                                instrumentos de
+                                gestão;
+                                <br>
+                                III - Desenvolver o Estado de Roraima por meio de soluções inovadoras e do
+                                aproveitamento
+                                sustentável e responsável de suas riquezas, potenciais naturais e condições produtivas
+                                diferenciadas; e
+                                <br>
+                                IV - Buscar a melhoria da qualidade de vida dos habitantes do Estado de Roraima,
+                                mediante a
+                                oferta adequada de segurança, educação, saúde e de outros serviços e utilidades
+                                coletivas de
+                                qualidade.
+                                <br>
+                                <br>
+                            </li>
+                            <li class="eixos py-3 px-3 mb-3">
+                                <p>
+                                    O <strong>Plano Plurianual de Roraima</strong> terá como base o Plano de
+                                    Desenvolvimento
+                                    Sustentável do
+                                    Estado de Roraima – <strong>RORAIMA 2030</strong>, pois assim será possível garantir
+                                    a
+                                    prevalência da
+                                    visão estratégica no conjunto do <strong>PPA</strong>.
+                                    As diretrizes estabelecidas no <strong>RORAIMA 2030</strong> irão nortear a
+                                    programação
+                                    dos próximos
+                                    <strong>PPAs</strong> e serão implementadas diretamente por órgãos e entidades da
+                                    Administração Pública
+                                    estadual.
+                                </p>
+                            </li>
+                            <li class="eixos active py-3 px-3">
+                                Ele foi instituído pela Lei Nº 1.825 de 04 de maio de 2023, e é organizado nos seguintes
+                                <strong>eixos
+                                    estratégicos:</strong>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+
+            <div class="container mt-3">
+                <div class="eixo-text-parent row">
                     <section class="col-3">
                         <ul class="eixos py-3 px-3">
                             <li class="mb-3">
@@ -100,11 +232,18 @@
                                     Gestão e Economia
                                 </button>
                             </li>
-                            <li class="align-items">
+                            <li class="mb-3">
                                 <button class="eixo d-flex align-items-center w-100" type="button">
                                     <i alt="Desenvolvimento Sustentável"
                                         class="fa-solid fa-tree d-flex justify-content-center"></i>
                                     Desenvolvimento Sustentável
+                                </button>
+                            </li>
+                            <li>
+                                <button class="eixo d-flex align-items-center w-100" type="button">
+                                    <i alt="Ciência, Tecnologia e Inovação"
+                                        class="fa-solid fa-flask d-flex justify-content-center"></i>
+                                    Ciência, Tecnologia e Inovação
                                 </button>
                             </li>
                         </ul>
@@ -151,7 +290,9 @@
                             Você pode e deve contribuir para a elaboração do PPA, Plano
                             Plurianual do Governo de Roraima. Sua participação é fundamental
                             e ajuda a construir essa importante ferramenta da gestão pública
-                            para a melhoria do nosso Estado.
+                            para a melhoria do nosso Estado. Participe indicado <b>propostas</b> de políticas públicas
+                            para o nosso Estado, de acordo com o que for prioritário para o seu município, identificando
+                            o tema e o sub tema:
                         </p>
                     </div>
                 </section>
@@ -160,17 +301,28 @@
 
                 <section class="d-flex align-items-center justify-content-center">
                     <form id="submit-form" class="pt-4 row justify-content-center">
-                        <div class="container-form-row d-flex justify-content-between">
+                        <div class="container-form-row d-flex justify-content-between pb-2">
                             <select id="municipio" name="municipio" required class="form-select py-2"
                                 aria-label="Default select example"></select>
                             <select id="tema" required name="tema" class="form-select py-2"
                                 aria-label="Default select example"></select>
                         </div>
+                        <div class="container-form-row d-flex justify-content-between col-12 pt-2">
+                            <select id="subtema" required name="subtema" class="form-select py-2 w-100"
+                                aria-label="Default select example"></select>
+                        </div>
+                        <div class="container-form-row d-flex justify-content-between col-12">
+                            <div class="w-100 pt-2">
+                                <label class="pb-2" for="">Faça aqui a sua proposta:</label>
+                                <input type="text" name="proposta" id="proposta" required class="form-control w-100"
+                                    placeholder="Proposta"></input>
+                            </div>
+                        </div>
                         <div class="container-form-row d-flex justify-content-between col-12">
                             <div class="w-100 py-2">
-                                <label class="pb-2" for="">Deixe aqui a sua contruibição:</label>
-                                <textarea name="contribuicao" id="contribuicao" required class="form-control"
-                                    rows="3"></textarea>
+                                <label class="pb-2" for="">Justificativa:</label>
+                                <textarea name="contribuicao" id="justificativa" required class="form-control"
+                                    rows="5"></textarea>
                             </div>
                         </div>
                         <div class="container-form-row d-flex justify-content-between py-2">
@@ -178,7 +330,7 @@
                             <input type="email" required name="email" id="email" class="form-control"
                                 placeholder="Email">
                         </div>
-                        <div class="container-form-end d-flex justify-content-between py-2">
+                        <div class="ultimos-selects-form container-form-end d-flex justify-content-between py-2">
                             <select id="escolaridade" name="escolaridade" required class="form-select py-2"></select>
                             <select id="faixa_etaria" name="faixa_etaria" required class="form-select py-2"></select>
                             <select id="genero" name="genero" required class="form-select py-2"></select>
@@ -192,19 +344,17 @@
         <article class="container my-5">
             <section id="cidades-ppa" class="row">
                 <i class="fa-regular fa-calendar d-flex justify-content-center"></i>
-                <h2 class="px-3 py-3">
-                    Fóruns Regionais de Planejamento Participativo
+                <h2 class="pt-3">
+                    Plano Plurianual Participativo - Online
                 </h2>
 
-                <ul id="foruns">
-                    <li>
-                        <b>1) Boa Vista</b>
-                        <br>
-                        Data: a definir
-                        <br>
-                        Local: a definir
-                    </li>
-                </ul>
+                <h3 class="text-center pb-3">
+                    PPA 2024-2027
+                </h3>
+
+                <p class="text-center">
+                    A definir
+                </p>
             </section>
         </article>
     </main>

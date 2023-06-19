@@ -41,6 +41,11 @@ textos_eixos = {
         "Propósito": "Trabalhar o desenvolvimento de Roraima de forma integrada e sustentável, buscando oportunizar ambiente para gerar competitivi- dade econômica para os empreendimentos roraimenses.",
         "Visão":     "Roraima ser um estado competitivo e sustentável até 2030.",
     },
+    "Ciência, Tecnologia e Inovação": {
+        "Conteúdo":  "A cultura empreendedora de inovação e a construção de uma cultura de formação tecnológica formam os novos pilares para a transformação da matriz econômica do estado, voltada para a transformação da produção agropecuária e biodiversidade em produtos de valor agregado, garantindo a qualidade e sustentabilidade. Que a inovação seja a mola propulsora do desenvolvimento econômico, transformação digital e geração de qualidade de vida de forma sustentável.",
+        "Atuação":   "Amparo à pesquisa científica básica e aplicada, à inovação e ao desenvolvimento tecnológico, no estado de Roraima, com o objetivo de fomentar a pesquisa, o conhecimento científico, tecnológico e inovador, assim como sua aplicação, no interesse do desenvolvimento econômico e social do Estado.",
+        "Propósito": "Visarão à interação das Instituições de Ciência, Tecnologia e Inovação (ICT&Is) e entidades de gestão pública, os processos e os instrumentos necessários à promoção da inovação por meio do desenvolvimento da pesquisa científica e tecnológica; contribuindo efetivamente para o desenvolvimento equilibrado, justo e sustentável do Estado.",
+    },
 }
 
 buttonsEixo = document.querySelectorAll(".eixo");
@@ -56,27 +61,10 @@ buttonsEixo.forEach((button) => {
         button.classList.add("active");
         
         sectionEixoText.innerHTML = `
-        <p>
-            ${textos_eixos[button.querySelector("i").attributes.alt.value]["Conteúdo"]}
-        </p>
-
-        <b>Atuação</b>
-
-        <p>
-            ${textos_eixos[button.querySelector("i").attributes.alt.value]["Atuação"]}
-        </p>
-
-        <b>Propósito</b>
-
-        <p>
-            ${textos_eixos[button.querySelector("i").attributes.alt.value]["Propósito"]}
-        </p>
-
-        <b>Visão</b>
-
-        <p>
-            ${textos_eixos[button.querySelector("i").attributes.alt.value]["Visão"]}
-        </p>
+            ${textos_eixos[button.querySelector("i").attributes.alt.value]["Conteúdo"] ? `<p>${textos_eixos[button.querySelector("i").attributes.alt.value]["Conteúdo"]}</p>` : ""}
+            ${textos_eixos[button.querySelector("i").attributes.alt.value]["Atuação"] ? `<b>Atuação</b><p>${textos_eixos[button.querySelector("i").attributes.alt.value]["Atuação"]}</p>` : ""}
+            ${textos_eixos[button.querySelector("i").attributes.alt.value]["Propósito"] ? `<b>Propósito</b><p>${textos_eixos[button.querySelector("i").attributes.alt.value]["Propósito"]}</p>` : ""}
+            ${textos_eixos[button.querySelector("i").attributes.alt.value]["Visão"] ? `<b>Visão</b><p>${textos_eixos[button.querySelector("i").attributes.alt.value]["Visão"]}</p>` : ""}
         `;
     });
 });
@@ -149,15 +137,28 @@ eixos = {
         28: "Conexão com mercados globais",
         29: "Outros",
     },
+    "Ciência, Tecnologia e Inovação": {
+        26: "Fomentar a pesquisa científica básica e tecnológica",
+        27: "Modernizar e ampliar a infraestrutura de CT&I",
+        28: "Formar e fixar os recursos humanos",
+        29: "Outros",
+    },
 }
 
 selectTema = document.getElementById("tema");
+selectSubtema = document.getElementById("subtema");
 selectTema.innerHTML = `<option hidden selected value="">Tema</option>`;
+selectSubtema.innerHTML = `<option hidden selected value="">Subtema</option>`;
 
 Object.entries(eixos).forEach(([eixo, temas]) => {
-    selectTema.innerHTML += `<option class="disabled" disabled>${eixo}</option>`;
-    Object.values(temas).forEach(tema => {
-        selectTema.innerHTML += `<option value="${`${eixo}: ${tema}`}">${tema}</option>`;
+    selectTema.innerHTML += `<option value="${eixo}">${eixo}</option>`;
+});
+
+selectTema.addEventListener("change", () => {
+    selectSubtema.innerHTML = `<option hidden selected value="">Subtema</option>`;
+
+    Object.values(eixos[selectTema.value]).forEach(tema => {
+        selectSubtema.innerHTML += `<option value="${tema}">${tema}</option>`;
     });
 });
 

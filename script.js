@@ -44,7 +44,7 @@ textos_eixos = {
     "Ciência, Tecnologia e Inovação": {
         "Conteúdo":  "A cultura empreendedora de inovação e a construção de uma cultura de formação tecnológica formam os novos pilares para a transformação da matriz econômica do estado, voltada para a transformação da produção agropecuária e biodiversidade em produtos de valor agregado, garantindo a qualidade e sustentabilidade. Que a inovação seja a mola propulsora do desenvolvimento econômico, transformação digital e geração de qualidade de vida de forma sustentável.",
         "Atuação":   "Amparo à pesquisa científica básica e aplicada, à inovação e ao desenvolvimento tecnológico, no estado de Roraima, com o objetivo de fomentar a pesquisa, o conhecimento científico, tecnológico e inovador, assim como sua aplicação, no interesse do desenvolvimento econômico e social do Estado.",
-        "Propósito": "Visarão à interação das Instituições de Ciência, Tecnologia e Inovação (ICT&Is) e entidades de gestão pública, os processos e os instrumentos necessários à promoção da inovação por meio do desenvolvimento da pesquisa científica e tecnológica; contribuindo efetivamente para o desenvolvimento equilibrado, justo e sustentável do Estado.",
+        "Propósito": "Visa à interação das Instituições de Ciência, Tecnologia e Inovação (ICT&Is) e entidades de gestão pública, os processos e os instrumentos necessários à promoção da inovação por meio do desenvolvimento da pesquisa científica e tecnológica; contribuindo efetivamente para o desenvolvimento equilibrado, justo e sustentável do Estado.",
     },
 }
 

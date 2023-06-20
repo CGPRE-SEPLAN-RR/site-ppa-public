@@ -71,7 +71,7 @@ h1 {
 
 .brasao-rr {
     position: absolute;
-    bottom: 1rem;
+    top: 1rem;
     right: var(--bs-gutter-x, .75rem);
     width: 60px;
     height: auto;
@@ -311,12 +311,8 @@ footer .row i {
 }
 
 @media (max-width: 992px) {
-    .brasao-rr {
-        position: absolute;
-        top: 1rem;
-        right: var(--bs-gutter-x, .75rem);
-        width: 60px;
-        height: auto;
+    h1 {
+        font-size: 1.5rem;
     }
 
     .o-que-e-img {
